@@ -510,6 +510,7 @@ def make_microduck_roller_standup_env_cfg(play: bool = False) -> ManagerBasedRlE
 
 # ── Config du runner RL — identique à standup ─────────────────────────────────
 MicroduckRollerStandUpRlCfg = RslRlOnPolicyRunnerCfg(
+    logger="tensorboard",
     actor=RslRlModelCfg(
         hidden_dims=(512, 256, 128),
         activation="elu",

@@ -733,6 +733,7 @@ def make_microduck_roulade_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
 # ── RL runner config ──────────────────────────────────────────────────────────
 
 MicroduckRouladeRlCfg = RslRlOnPolicyRunnerCfg(
+    logger="tensorboard",
     actor=RslRlModelCfg(
         hidden_dims=(512, 256, 128),
         activation="elu",

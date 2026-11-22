@@ -975,6 +975,7 @@ def make_microduck_sitstand_env_cfg(
 # ── RL runner config ──────────────────────────────────────────────────────────
 
 MicroduckSitStandRlCfg = RslRlOnPolicyRunnerCfg(
+    logger="tensorboard",
     actor=RslRlModelCfg(
         hidden_dims=(512, 256, 128),
         activation="elu",

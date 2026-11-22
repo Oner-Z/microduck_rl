@@ -224,6 +224,7 @@ def make_microduck_roller_slope_env_cfg(play: bool = False) -> ManagerBasedRlEnv
 
 
 MicroduckRollerSlopeRlCfg = RslRlOnPolicyRunnerCfg(
+    logger="tensorboard",
     actor=RslRlModelCfg(
         hidden_dims=(512, 256, 128),
         activation="elu",

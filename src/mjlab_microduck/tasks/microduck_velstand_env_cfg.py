@@ -962,6 +962,7 @@ def make_microduck_velstand_env_cfg(play: bool = False, rough: bool = False) -> 
 
 
 MicroduckVelStandRlCfg = RslRlOnPolicyRunnerCfg(
+    logger="tensorboard",
     actor=RslRlModelCfg(
         hidden_dims=(512, 256, 128),
         activation="elu",

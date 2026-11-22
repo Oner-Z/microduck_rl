@@ -667,6 +667,7 @@ def make_microduck_ground_pick_env_cfg(play: bool = False, rough: bool = False) 
 # ── RL runner config ──────────────────────────────────────────────────────────
 
 MicroduckGroundPickRlCfg = RslRlOnPolicyRunnerCfg(
+    logger="tensorboard",
     actor=RslRlModelCfg(
         hidden_dims=(512, 256, 128),
         activation="elu",

@@ -622,6 +622,7 @@ def make_microduck_ball_kick_env_cfg(
 # ── RL runner config ──────────────────────────────────────────────────────────
 
 MicroduckBallKickRlCfg = RslRlOnPolicyRunnerCfg(
+    logger="tensorboard",
     actor=RslRlModelCfg(
         hidden_dims=(512, 256, 128),
         activation="elu",

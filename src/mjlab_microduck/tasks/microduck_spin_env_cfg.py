@@ -446,6 +446,7 @@ def make_microduck_spin_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
 
 
 MicroduckSpinRlCfg = RslRlOnPolicyRunnerCfg(
+    logger="tensorboard",
     actor=RslRlModelCfg(
         hidden_dims=(512, 256, 128),
         activation="elu",

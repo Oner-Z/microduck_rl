@@ -267,6 +267,7 @@ def make_testbench_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
 
 
 MicroduckTestbenchRlCfg = RslRlOnPolicyRunnerCfg(
+    logger="tensorboard",
     policy=RslRlPpoActorCriticCfg(
         init_noise_std=1.0,
         actor_obs_normalization=False,

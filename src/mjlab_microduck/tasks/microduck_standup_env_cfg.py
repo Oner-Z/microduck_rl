@@ -1120,6 +1120,7 @@ def make_microduck_standup_env_cfg(
 # ── RL runner config ──────────────────────────────────────────────────────────
 
 MicroduckStandUpRlCfg = RslRlOnPolicyRunnerCfg(
+    logger="tensorboard",
     actor=RslRlModelCfg(
         hidden_dims=(512, 256, 128),
         activation="elu",

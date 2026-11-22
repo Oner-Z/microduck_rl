@@ -910,6 +910,7 @@ def make_microduck_velocity_env_cfg(
 
 
 MicroduckRlCfg = RslRlOnPolicyRunnerCfg(
+    logger="tensorboard",
     actor=RslRlModelCfg(
         hidden_dims=(512, 256, 128),
         activation="elu",
